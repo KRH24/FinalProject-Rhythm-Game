@@ -13,7 +13,7 @@ public class respawn : MonoBehaviour
 
         timer += Time.deltaTime;
 
-        if (timer >= 2f)
+        if (timer >= 5f)
         {
             Spawner();
             timer = 0f;
