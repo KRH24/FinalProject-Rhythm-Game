@@ -569,9 +569,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 204534123441156218, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
+      propertyPath: m_GravityScale
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 497711000126957245, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: m_Name
       value: ArrowHolder (NoteHolder)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781899359218897739, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
+      propertyPath: m_GravityScale
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3268041956351954022, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
+      propertyPath: m_GravityScale
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030417767247891437, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
+      propertyPath: m_GravityScale
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6556045670386880632, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: m_LocalPosition.x
