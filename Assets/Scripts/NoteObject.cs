@@ -9,6 +9,9 @@ public class NoteObject : MonoBehaviour
 
     public KeyCode keyToPress;
 
+    private bool wasHit = false;// used to indicate if the note was hit or not
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,6 +25,7 @@ public class NoteObject : MonoBehaviour
         {
             if (canBePressed)
             {
+                wasHit = true;
                 gameObject.SetActive(false);
 
                 GameManager.instance.NoteHit();// tells the GameManager we hit a note (used for debug.log)
@@ -33,7 +37,7 @@ public class NoteObject : MonoBehaviour
     {
         if (other.tag == "Activator")
         {
-            Debug.Log("Entered Activator zone!");
+            //Debug.Log("Entered Activator zone!");// used to indiciate notes being near music blocks
             canBePressed = true;
         }
     }
@@ -44,7 +48,10 @@ public class NoteObject : MonoBehaviour
         {
             canBePressed = false;
 
-            GameManager.instance.NoteMissed(); // tells the GameManager we missed a note (used for debug.log)
+            if (!wasHit)
+            {
+                GameManager.instance.NoteMissed(); // tells the GameManager we missed a note (used for debug.log)
+            }     
         }
     }
 }
