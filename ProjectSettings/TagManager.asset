@@ -45,5 +45,8 @@ TagManager:
   - name: arrowShape
     uniqueID: 2390544081
     locked: 0
+  - name: Arrows
+    uniqueID: 1639637073
+    locked: 0
   m_RenderingLayers:
   - Default

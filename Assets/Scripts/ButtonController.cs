@@ -1,5 +1,8 @@
+using System.Collections; 
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; //utilized for UI Image
+using TMPro;
 
 public class ButtonController : MonoBehaviour
 {

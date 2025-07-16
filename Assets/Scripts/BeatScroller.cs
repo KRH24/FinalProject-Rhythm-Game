@@ -1,9 +1,12 @@
-using UnityEngine;
 using System.Collections; 
 using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
 
 /*
-    NOTE : CHANGE BEAT TEMPO IN SCRIPT IN INSPECTOR
+    Makes arrows fall down
+
+    NOTE : CHANGE BEAT TEMPO IN SCRIPT IN NOTEHOLDER (INSPECTOR) 
 
 */
 
@@ -25,12 +28,13 @@ public class BeatScroller : MonoBehaviour
     {
         if (!hasStarted)
         {
-            if (Input.anyKeyDown)
+            /*if (Input.anyKeyDown)
             {
                 hasStarted = true;
-            }
+            }*/ // NO LONGER NEEDED, DONE INE "GameManager.cs" 
             
-        } else 
+        } 
+        else 
         {
            transform.position -= new Vector3(0f, beatTempo * Time.deltaTime, 0f);     
         }
