@@ -288,7 +288,7 @@ Transform:
   m_GameObject: {fileID: 288217337}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.05, y: 5.96, z: 0}
+  m_LocalPosition: {x: -3.95, y: 5.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -353,7 +353,7 @@ Transform:
   m_GameObject: {fileID: 397814972}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.26, y: 5.99, z: 0}
+  m_LocalPosition: {x: 0.38, y: 5.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -596,6 +596,10 @@ PrefabInstance:
       propertyPath: canBePressed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 380243771215204714, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
+      propertyPath: m_Name
+      value: LeftArrow
+      objectReference: {fileID: 0}
     - target: {fileID: 497711000126957245, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: m_Name
       value: ArrowHolder (NoteHolder)
@@ -606,11 +610,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 630813208108821366, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.25
+      value: 2.14
       objectReference: {fileID: 0}
     - target: {fileID: 630813208108821366, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 630813208108821366, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: m_LocalRotation.x
@@ -622,11 +626,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 630813208108821366, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 630813208108821366, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1939531494636556584, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: keyToPress
@@ -636,6 +640,10 @@ PrefabInstance:
       propertyPath: canBePressed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2683062188916932116, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7483611138141181835, guid: 659319952acabb94389766b75c869ed7, type: 3}
     - target: {fileID: 3224476627451301538, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: fallSpeed
       value: 1
@@ -670,23 +678,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3541126873744491437, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.34
+      value: -7.17
       objectReference: {fileID: 0}
     - target: {fileID: 3541126873744491437, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.51
+      value: 2.01
       objectReference: {fileID: 0}
     - target: {fileID: 3541126873744491437, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3541126873744491437, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
-      propertyPath: m_LocalRotation.z
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3541126873744491437, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3541126873744491437, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3736277817389066092, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: keyToPress
@@ -759,6 +767,14 @@ PrefabInstance:
     - target: {fileID: 7105374008576961808, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7461255397791279149, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2521081171317217482, guid: 75d5ba19aa3489449b963472481da8e7, type: 3}
+    - target: {fileID: 8385348860754255771, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
+      propertyPath: m_Name
+      value: RightArrow
       objectReference: {fileID: 0}
     - target: {fileID: 8502343817312857526, guid: 02614549cbc02734898ff9e2f510d915, type: 3}
       propertyPath: keyToPress
@@ -1029,7 +1045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b090f2ef61999d41bb3e46b6335428d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Arrows: {fileID: 619961688}
+  Arrows: {fileID: 619961686}
   SpawnPoint: {fileID: 1455940974}
 --- !u!4 &1455940974
 Transform:
@@ -1162,7 +1178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b090f2ef61999d41bb3e46b6335428d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Arrows: {fileID: 619961686}
+  Arrows: {fileID: 619961688}
   SpawnPoint: {fileID: 1615439757}
 --- !u!4 &1615439757
 Transform:
@@ -1173,7 +1189,7 @@ Transform:
   m_GameObject: {fileID: 1615439755}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.08, y: 5.96, z: 0}
+  m_LocalPosition: {x: 2.65, y: 5.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
