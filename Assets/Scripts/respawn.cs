@@ -1,33 +1,34 @@
 using UnityEngine;
+using System.Collections;
 
 public class respawn : MonoBehaviour
 {
-    public GameObject Arrows;
+    public GameObject Arrow;
     public Transform SpawnPoint;
-
-    private float timer = 0f;
-
+    public float minWaitTime = 1f;
+    public float maxWaitTime = 4f;
+    //private int totalArrow = 4;
+    private float timer;
     // Update is called once per frame
-    void Update()
+    void Start()
     {
 
-        timer += Time.deltaTime;
+        StartCoroutine(Spawner());
 
-        if (timer >= 5f)
+   }
+
+    IEnumerator Spawner()
+    {
+        while (true)
         {
-            Spawner();
-            timer = 0f;
-            
+            float respawnTime = Random.Range(minWaitTime, maxWaitTime);
+            yield return new WaitForSeconds(respawnTime);
+
+            Instantiate(Arrow, SpawnPoint.position, Quaternion.identity);
         }
 
     }
 
-    void Spawner()
-    {
 
-        GameObject newplayer = Instantiate(Arrows, SpawnPoint.position, Quaternion.identity);
 
-    }
-
-   
 }

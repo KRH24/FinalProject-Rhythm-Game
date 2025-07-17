@@ -122,8 +122,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1904423215
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 8441235945893673752, guid: 6655b9fa55d1ebf43b29a9bd1671b7b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -180,7 +180,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3, y: 1.43}
+  m_Size: {x: 3, y: 1.7}
   m_EdgeRadius: 0
 --- !u!50 &3010839975141560672
 Rigidbody2D:
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 8441235945893673752, guid: 6655b9fa55d1ebf43b29a9bd1671b7b8, type: 3}
   pressedImage: {fileID: -3087084463196193872, guid: cb0b3bdd3e7a29c408aed2ea07137183, type: 3}
-  keyToPress: 274
+  keyToPress: 273
 --- !u!1 &1594978275783147268
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,8 +390,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1904423215
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -7481306856387438711, guid: db32fa6594fb2784cbc6289ffdd263e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -448,7 +448,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3, y: 1.43}
+  m_Size: {x: 3, y: 1.7}
   m_EdgeRadius: 0
 --- !u!50 &4222052525409106013
 Rigidbody2D:
@@ -491,7 +491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: -7481306856387438711, guid: db32fa6594fb2784cbc6289ffdd263e9, type: 3}
   pressedImage: {fileID: 3931747974873363069, guid: 469b4b167d5221245af243dc23aa7595, type: 3}
-  keyToPress: 276
+  keyToPress: 275
 --- !u!1 &4089886632557976981
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,10 +565,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1904423215
-  m_SortingLayer: 1
+  m_SortingLayerID: 1639637073
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7273833753191816548, guid: c031c763e43161f49a74259342cfe5b9, type: 3}
+  m_Sprite: {fileID: -1883832525750896831, guid: 3c7b4a91855c17f449fbf2bed77b80f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -690,7 +690,7 @@ GameObject:
   - component: {fileID: 6640082032389422357}
   - component: {fileID: 3452377648783075209}
   m_Layer: 5
-  m_Name: RightArrowSprite
+  m_Name: LeftArrowSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -755,7 +755,7 @@ SpriteRenderer:
   m_SortingLayerID: -1904423215
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1883832525750896831, guid: 3c7b4a91855c17f449fbf2bed77b80f8, type: 3}
+  m_Sprite: {fileID: 7273833753191816548, guid: c031c763e43161f49a74259342cfe5b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -836,7 +836,7 @@ Transform:
   m_GameObject: {fileID: 6434453357496701536}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.71, y: 0, z: 0}
   m_LocalScale: {x: 0.28879106, y: 0.28879106, z: 0.28879106}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -883,10 +883,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1904423215
-  m_SortingLayer: 1
+  m_SortingLayerID: 1639637073
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6709270194840917522, guid: ca5407722138d20448c5a7901c584f7a, type: 3}
+  m_Sprite: {fileID: -376350833835510722, guid: 38518206dfb12bd4d866a46916f1f6e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -923,7 +923,7 @@ Transform:
   m_GameObject: {fileID: 6917061835057217580}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.41, y: 0.00000018224816, z: 0}
+  m_LocalPosition: {x: 0.02, y: 0.00000018224816, z: 0}
   m_LocalScale: {x: 0.26461, y: 0.26461, z: 0.26461}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -970,10 +970,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1904423215
-  m_SortingLayer: 1
+  m_SortingLayerID: 1639637073
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -376350833835510722, guid: 38518206dfb12bd4d866a46916f1f6e6, type: 3}
+  m_Sprite: {fileID: 6709270194840917522, guid: ca5407722138d20448c5a7901c584f7a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1065,7 +1065,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3, y: 1.43}
+  m_Size: {x: 3, y: 1.7}
   m_EdgeRadius: 0
 --- !u!50 &720519545022791354
 Rigidbody2D:
@@ -1108,7 +1108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: -5020124832806615339, guid: ccfb7d1b972c73141bf9f9c1c4953b18, type: 3}
   pressedImage: {fileID: 2322817152261999152, guid: 0b8485b74cc90f1409a9685b0b3cc053, type: 3}
-  keyToPress: 275
+  keyToPress: 276
 --- !u!212 &1185024160448689593
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1162,7 +1162,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!1 &7750991762426256414
 GameObject:
@@ -1242,8 +1242,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1904423215
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -3569920105767957312, guid: 2d79c6a78524c404c8dff8382ae47c41, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1300,7 +1300,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3, y: 1.43}
+  m_Size: {x: 3, y: 1.7}
   m_EdgeRadius: 0
 --- !u!50 &321228841850827859
 Rigidbody2D:
@@ -1343,4 +1343,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: -3569920105767957312, guid: 2d79c6a78524c404c8dff8382ae47c41, type: 3}
   pressedImage: {fileID: 6702657788162325674, guid: e9fb05cd115487a45ac0bd4e81fe4db6, type: 3}
-  keyToPress: 273
+  keyToPress: 274
