@@ -6,6 +6,14 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+
+    public GameObject gameOverPanel;// used for game over screen when you lose
+    public GameObject victoryPanel; // used for victory screen when you win
+
+
+
+
+
     public AudioSource theMusic; // used to call music for game
 
     public bool startPlaying; // used to start the music 
@@ -19,6 +27,15 @@ public class GameManager : MonoBehaviour
 
     //public Text scoreText;
     public TextMeshProUGUI scoreText;
+
+    public HealthDisplay healthDisplay; // used to make an instance of HealthDisplay script for losing hearts for missing notes
+
+
+    private int successfulHits = 0;// used to track every 3rd hit for enemy health bar
+
+    public EnemyHealthDisplay enemyHealthDisplay; // instance of EnemyHealthDisplay code (Drag EnemyHealthDisplay component here in Inspector)
+
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -44,6 +61,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /* // CHANGE THIS BACK IF ONE UNDER THIS IS TWEAKING 
     public void NoteHit()
     {
         Debug.Log("Hit On Time");
@@ -51,9 +69,61 @@ public class GameManager : MonoBehaviour
         currentScore += scorePerNote;
         scoreText.text = "Score: " + currentScore; 
     }
+    */
+
+    public void NoteHit()
+    {
+        Debug.Log("Hit On Time");
+
+        currentScore += scorePerNote;
+        scoreText.text = "Score: " + currentScore;
+
+        successfulHits++;
+
+        // Every 3rd note hit, damage the enemy
+        if (successfulHits % 3 == 0)
+        {
+            if (enemyHealthDisplay != null)
+            {
+                enemyHealthDisplay.health--;
+
+                if (enemyHealthDisplay.health <= 0)
+                {
+                    //Debug.Log("Enemy Defeated!");
+                    TriggerVictory(); 
+                }
+            }
+        }
+    }
+
 
     public void NoteMissed()
     {
         Debug.Log("Missed Note");
+
+        if (healthDisplay != null)
+        {
+            healthDisplay.health--; // Decrease health
+
+            if (healthDisplay.health <= 0)
+            {
+                TriggerGameOver();
+            }
+        }
     }
+
+    void TriggerGameOver()
+    {
+        Debug.Log("Game Over triggered.");
+        gameOverPanel.SetActive(true);
+        Time.timeScale = 0f; // pause the game (optional)
+    }
+
+    public void TriggerVictory()
+    {
+        Debug.Log("Victory triggered.");
+        victoryPanel.SetActive(true);
+        Time.timeScale = 0f; // pause the game (optional)
+    }
+
 }
